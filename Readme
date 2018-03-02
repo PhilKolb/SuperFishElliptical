@@ -1,0 +1,11 @@
+Julia script to generate input file for the simulation code Superfish to calculate eigenmodes in elliptical cavities
+
+Needs superfish installed into C:/LANL/
+Geometry parameters are in cm.
+
+"freq" Frequency in MHz that SuperFish uses to search for the eigenmode, shoudl be slightly lower than estimated frequency
+"meshsize": size of triangle mesh
+numberCells: number of elliptical cells, integer
+freq_sim: Frequency (in MHz) for frequency scaling. First run use value entered in "freq", second run enter calculated frequency. This scales the cavity to the correct frequency
+
+Geometry parameters for Center halfcells (multicell cavity), left end halfcell, right end halfcell, transition to left enlarged beampipe (if "enlargedBP_FPC = 1"), transition to right enlarged beampipe (if "enlargedBP_FPC = 1")
